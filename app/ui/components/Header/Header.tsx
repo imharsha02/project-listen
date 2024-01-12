@@ -13,10 +13,13 @@ const Header = () => {
       {/* Logo container */}
       <div className="flex items-center">
         {/* Menu icon (hamburger) */}
+        <div>
+
         <IoIosMenu className="p-2 w-10 h-10" onClick={() => {setOpenSidebar(!openSidebar)}}/>
         {
           openSidebar && <Sidebar />
         }
+        </div>
 
         {/* Icon */}
         <Logo />
